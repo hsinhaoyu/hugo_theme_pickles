@@ -1,7 +1,8 @@
 {{ partial "header.html" . }}
 {{ if isset .Site.Taxonomies "tags" }}
     {{ $mytag := .Title }}
-    {{ range $index, $page := (.Paginate (where .Data.Pages "Type" "micro") 10).Pages }}
+    {{ $n := .Param "micropaginate" }}
+    {{ range $index, $page := (.Paginate (where .Data.Pages "Type" "micro") $n).Pages }}
         {{ if ne $index 0 }}
         {{ end }}
         {{ .Render "li_micro" }}

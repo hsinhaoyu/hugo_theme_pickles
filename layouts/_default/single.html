@@ -50,7 +50,9 @@
         </div>
       </div>
     </nav>
-    {{ partial "related.html" . }}
+    {{ if .Param "userelated"}}
+        {{ partial "related.html" . }}
+    {{ end }}
     {{ partial "siteinfo.html" . }}
   </footer>
 </article>
