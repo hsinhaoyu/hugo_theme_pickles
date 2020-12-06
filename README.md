@@ -105,6 +105,7 @@ Please create feature branches from [develop](https://github.com/mismith0227/hug
 ## In this forked version:
 - Write microblogs with ```hugo new micro/filename.md```.
 - To use KaTeX, add ```math: true``` in the front matter of the post.
+- At this stage, KaTeX is not supported for microblogs.
 
 ## License
 
