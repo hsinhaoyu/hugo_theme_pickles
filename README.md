@@ -102,6 +102,10 @@ Please create feature branches from [develop](https://github.com/mismith0227/hug
         // Build
         $ yarn run build
 
+## In this forked version:
+- Write microblogs with ```hugo new micro/filename.md```.
+- To use KaTeX, add ```math: true``` in the front matter of the post.
+
 ## License
 
 Open sourced under the MIT license.
