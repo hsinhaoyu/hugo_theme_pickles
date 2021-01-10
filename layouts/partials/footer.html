@@ -9,7 +9,7 @@
       {{ else }}
         {{ if ($.Param "author") }}
           {{ if ($.Param "authorwebsite") }}
-            <a class="h-card" href="{{ $.Param "authorwebsite" }}">{{ $.Param "author" }}</a>
+            <a class="h-card p-author" href="{{ $.Param "authorwebsite" }}">{{ $.Param "author" }}</a>
           {{ else }}
             {{ $.Param "author" }}
           {{ end }}

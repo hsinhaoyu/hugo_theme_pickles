@@ -1,5 +1,5 @@
-<a href="{{ .Permalink }}">
-<time class="micro" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+<a class="u-url" href="{{ .Permalink }}">
+<time class="micro dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
   {{ .Date.Format "Jan 2, 2006" }}
 </time>
 </a>
